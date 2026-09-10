@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="From Idea to Something Real - Transform your product ideas into structured concepts">
+  <title>From Idea to Something Real</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <div class="header-content">
+        <h1 class="logo">idea<span class="accent">→</span>real</h1>
+        <p class="tagline">Transform your product idea into something real</p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Landing State -->
+      <section class="landing" id="landing">
+        <div class="landing-content">
+          <div class="input-section">
+            <label for="ideaInput" class="input-label">What's the idea?</label>
+            <input
+              type="text"
+              id="ideaInput"
+              class="idea-input"
+              placeholder="e.g., Better way for African freelancers to get paid"
+              autocomplete="off"
+            >
+            <button class="btn btn-primary" id="buildBtn">Build it</button>
+          </div>
+
+          <!-- Examples -->
+          <div class="examples">
+            <p class="examples-label">Try these ideas:</p>
+            <div class="examples-grid">
+              <button class="example-btn" data-idea="A platform that connects remote workers with flexible project opportunities">
+                <span class="example-icon">💼</span>
+                <span>Remote work marketplace</span>
+              </button>
+              <button class="example-btn" data-idea="An app that helps small business owners understand their finances in simple language">
+                <span class="example-icon">📊</span>
+                <span>Finance for small businesses</span>
+              </button>
+              <button class="example-btn" data-idea="A tool that makes it easy for creators to track and manage their fan relationships">
+                <span class="example-icon">🎨</span>
+                <span>Creator community management</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Results State -->
+      <section class="results" id="results" style="display: none;">
+        <button class="btn btn-secondary" id="backBtn">← Try another idea</button>
+
+        <article class="concept">
+          <!-- Original Idea -->
+          <section class="concept-section idea-section">
+            <h2 class="section-label">The Idea</h2>
+            <p class="section-content" id="ideaResult"></p>
+          </section>
+
+          <!-- Problem -->
+          <section class="concept-section">
+            <h2 class="section-label">The Problem</h2>
+            <p class="section-content" id="problemResult"></p>
+          </section>
+
+          <!-- Target Audience -->
+          <section class="concept-section">
+            <h2 class="section-label">Who It's For</h2>
+            <p class="section-content" id="audienceResult"></p>
+          </section>
+
+          <!-- Solution -->
+          <section class="concept-section">
+            <h2 class="section-label">The Solution</h2>
+            <p class="section-content" id="solutionResult"></p>
+          </section>
+
+          <!-- First Feature -->
+          <section class="concept-section">
+            <h2 class="section-label">First Key Feature</h2>
+            <p class="section-content" id="featureResult"></p>
+          </section>
+
+          <!-- Tagline -->
+          <section class="concept-section tagline-section">
+            <h2 class="section-label">The Tagline</h2>
+            <p class="section-content tagline-content" id="taglineResult"></p>
+          </section>
+        </article>
+
+        <!-- Attribution -->
+        <footer class="attribution">
+          <p>Built with <span class="accent-text">GitHub Copilot</span></p>
+        </footer>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
